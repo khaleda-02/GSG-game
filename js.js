@@ -30,8 +30,8 @@ btns.forEach(function (btn) {
     computerSpan.innerHTML = computerChoice;
     resultSpan.innerHTML = winner(computerChoice, playerChoice);
     // firstImage.src = "images/" + playerChoice + ".png ";
-    firstImage.src = "images/paper.png";
-    secImage.src = "images/rock.png";
+    // firstImage.src = "images/paper.png";
+    // secImage.src = "images/rock.png";
     console.log(firstImage);
   };
 });
