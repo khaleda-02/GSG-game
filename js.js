@@ -7,7 +7,7 @@ let firstImage = document.querySelector(".first-image");
 let secImage = document.querySelector(".sec-image");
 let playerChoice = "";
 let computerChoice = "";
-let options = ["Rock", "Paper", "scisser"];
+let options = ["rock", "paper", "scisser"];
 let images = ["images/rock.png", "images/paper.png", "images/scisser.png"];
 
 //create btns and append it to the page
@@ -28,17 +28,13 @@ btns.forEach(function(btn) {
         computerChoice = computerChoiceCreater(options);
         computerSpan.innerHTML = computerChoice;
         resultSpan.innerHTML = winner(computerChoice, playerChoice);
-        firstImage.src = "images/" + playerChoice + ".png ";
-        secImage.src = "images/" + computerChoice + ".png ";
+        firstImage.src = "images/" + playerChoice + ".png";
+        secImage.src = "images/" + computerChoice + ".png";
         console.log(firstImage);
     };
 });
 
 function winner(computerChoice, playerChoice) {
-    //IF THEY ARE EQUAL
-    // RETURN "EQUAL".....
-    //IF NOT FOUND THE MOST PRIORITY AND RETURN IT
-
     if (computerChoice != null && playerChoice != null) {
         // same input
         if (computerChoice === playerChoice) {
