@@ -29,9 +29,8 @@ btns.forEach(function (btn) {
     computerChoice = computerChoiceCreater(options);
     computerSpan.innerHTML = computerChoice;
     resultSpan.innerHTML = winner(computerChoice, playerChoice);
-    // firstImage.src = "images/" + playerChoice + ".png ";
-    // firstImage.src = "images/paper.png";
-    // secImage.src = "images/rock.png";
+    firstImage.src = "images/" + playerChoice + ".png ";
+    secImage.src = "images/" + computerChoice + ".png ";
     console.log(firstImage);
   };
 });
